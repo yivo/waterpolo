@@ -16,7 +16,7 @@ _ =
   take:     require('lodash/take')
 
 AUTO_LOG_LEVEL = if process.env.NODE_ENV is 'production' then 'warn' else 'debug'
-LOG_LEVEL      = process.env.WATERPOOL_LOG_LEVEL ? AUTO_LOG_LEVEL
+LOG_LEVEL      = process.env.WATERPOLO_LOG_LEVEL ? AUTO_LOG_LEVEL
 LOG_DEBUG      = LOG_LEVEL is 'debug'
 LOG_INFO       = LOG_DEBUG or LOG_LEVEL is 'info'
 LOG_WARN       = LOG_INFO  or LOG_LEVEL is 'warn'

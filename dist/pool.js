@@ -21,7 +21,7 @@ _ = {
 
 AUTO_LOG_LEVEL = process.env.NODE_ENV === 'production' ? 'warn' : 'debug';
 
-LOG_LEVEL = (ref = process.env.WATERPOOL_LOG_LEVEL) != null ? ref : AUTO_LOG_LEVEL;
+LOG_LEVEL = (ref = process.env.WATERPOLO_LOG_LEVEL) != null ? ref : AUTO_LOG_LEVEL;
 
 LOG_DEBUG = LOG_LEVEL === 'debug';
 
